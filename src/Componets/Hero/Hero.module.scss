@@ -1,0 +1,54 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    ::selection {
+        background-color: black;
+        color: white;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../About/hero_1\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .containerHero {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 80%;
+        .heroDesk{
+            width: 44%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-size: 55px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(51, 51, 51);
+                font-weight: 400;
+            }
+            button{
+                font-size: 17px;
+                font-weight: 600;
+                color: white;
+                background-color: #7971EA;
+                border: none;
+                width: 30%;
+                padding: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+}

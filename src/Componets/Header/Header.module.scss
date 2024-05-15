@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+    .containerHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+
+        .containerHeaderTop {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .containerHeaderLogo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                h1 {
+                    padding: 6px;
+                    padding-right: 17px;
+                    padding-left: 17px;
+                    border: 2px solid black;
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: 5px;
+                }
+            }
+
+            .containerHeaderIcons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 20px;
+                color: #868995;
+
+                a {
+                    text-decoration: none;
+                }
+
+                .cart {
+                    color: #868995;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 3px;
+                }
+
+                .two {
+                    color: rgb(255, 255, 255);
+                    padding: 3px;
+                    padding-right: 7px;
+                    padding-left: 7px;
+                    font-size: 12px;
+                    bottom: 23px;
+                    left: 13px;
+                    background-color: #7971EA;
+                    border-radius: 100px;
+                    position: relative;
+                }
+            }
+
+            .containerHeaderSearch {
+                width: 100%;
+                display: flex;
+                gap: 10px;
+
+                input {
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+        .containerHeaderBottom {
+            padding-bottom: 30px;
+            ul {
+                display: flex;
+                gap: 20px;
+            }
+
+            li {
+                display: flex;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}

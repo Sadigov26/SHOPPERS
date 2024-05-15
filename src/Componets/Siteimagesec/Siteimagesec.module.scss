@@ -1,0 +1,92 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Siteimagesec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    min-height: 100vh;
+
+    .SiteimagesecContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 90%;
+        gap: 30px;
+
+        .SiteimagesecContainerImg {
+            display: flex;
+        overflow: hidden;
+            width: 30%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .imageDesk {
+            position: absolute;
+            bottom: 29px;
+            left: 20px;
+        }
+    }
+}
+
+.SiteimagesecContainerImg {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageDesk {
+        color: white;
+        z-index: 1;
+
+        p {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+    }
+}
+
+.SiteimagesecContainerImg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 0;
+
+}
+
+.SiteimagesecContainerImg {
+
+  
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Geçiş efekti */
+    }
+  
+    &:hover {
+      img {
+        transform: scale(1.1);
+        overflow: hidden; /* Taşma efektini gizler */
+      }
+    }
+  }
+   

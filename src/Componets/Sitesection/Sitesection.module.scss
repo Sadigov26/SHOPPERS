@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.sitesection {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+    .sitesectionContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        gap: 40px;
+
+        .sitesectionContainerCol {
+            display: flex;
+            gap: 35px;
+
+            .siteIcons {
+                font-size: 40px;
+                color: #7971EA;
+            }
+
+            .sitesectionContainerColDesk {
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                p {
+                    color: rgb(140, 146, 160);
+                }
+            }
+        }
+    }
+}
